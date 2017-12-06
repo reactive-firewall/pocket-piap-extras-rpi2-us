@@ -1,0 +1,12 @@
+Package: pocket-piap-extras-rpi2-us
+Version: 0.2.8
+Architecture: amd64
+Maintainer: reactive-firewall <reactive-firewall+bugs@gmail.com>
+Installed-Size: 17
+Section: admin
+Priority: optional
+Description: Extras for Pocket PiAP running on RaspberryPi Model 2.
+ This Package of Extras disables bluetooth deamons intended for RaspberryPi 3.
+ This Package of Extras configures the timezone.
+ This Package is extra and not strictly needed for Pocket PiAP to run.
+ BETA.

@@ -1,0 +1,16 @@
+#! /bin/bash --posix
+PIAP_TZSELECT_ANSWERS='2\n49\n21\n1\n'
+PIAP_TZ='America/Los_Angeles'
+PIAP_LOCALTIME='US/Pacific'
+if [[ -e /etc/defaults/pocket-piap-extras-rpi2-us ]] ; then
+	source /etc/defaults/pocket-piap-extras-rpi2-us
+fi
+printf ${TZSELECT_ANSWERS:-'2\n49\n21\n1\n'} | tzselect ;
+export TZ=${PIAP_TZ:-'America/Los_Angeles'} ;
+umask 022
+if [[ -r /usr/share/zoneinfo/${PIAP_LOCALTIME:-'US/Pacific'} ]] ; then
+	ln -sf /usr/share/zoneinfo/${PIAP_LOCALTIME:-'US/Pacific'} /etc/localtime || true
+else
+	ln -sf /usr/share/zoneinfo/US/Pacific /etc/localtime || true
+fi
+exit 0 ;

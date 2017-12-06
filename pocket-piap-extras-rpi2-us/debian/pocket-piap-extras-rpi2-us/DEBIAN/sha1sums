@@ -1,0 +1,5 @@
+2daebe0778c4c732f04759d15632a075a195fdf8  usr/share/man/man7/pocket-piap-extras-rpi2-us.7
+3d4d3321a73efc314b749fe19ea8c3597bb73544  usr/share/doc/pocket-piap-extras-rpi2-us/changelog.Debian.gz
+1d5ee29c63c4f226939309fad9e2a8613eb00574  usr/share/doc/pocket-piap-extras-rpi2-us/copyright
+f32b7134a912733c4b25a7cdcb7e543b82d8d5da  etc/cron.hourly/disable_bluetooth
+9120e9f03c11814bc755145abaa1dc84bd708519  etc/cron.hourly/fix_timezone
