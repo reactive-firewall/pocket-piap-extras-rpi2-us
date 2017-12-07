@@ -59,7 +59,7 @@ endif
 PHONY: must_be_root cleanup
 
 build:
-	$(QUIET)$(MAKE) -d ./pocket-piap-extras-rpi2-us -f ./makefile install
+	$(QUIET)$(MAKE) --directory=./pocket-piap-extras-rpi2-us -f ./makefile install
 	$(QUIET)$(ECHO) "Done."
 
 init:
@@ -102,7 +102,7 @@ cleanup:
 	$(QUIET)rm -f ./*~ 2>/dev/null || true
 	$(QUIET)rm -f ./.*~ 2>/dev/null || true
 	$(QUIET)rm -Rf ./.tox/ 2>/dev/null || true
-	$(QUIET)$(MAKE) -d ./pocket-piap-extras-rpi2-us -f ./makefile clean || true
+	$(QUIET)$(MAKE) --directory=./pocket-piap-extras-rpi2-us -f ./makefile clean || true
 
 clean: cleanup
 	$(QUIET)$(ECHO) "$@: Done."
