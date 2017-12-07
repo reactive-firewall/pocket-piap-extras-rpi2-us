@@ -13,3 +13,10 @@ lib64/
 .cache
 *.log
 ./*.deb
+./pocket-piap-extras-rpi2-us/debian/*
+./pocket-piap-extras-rpi2-us/debian/*/*
+./pocket-piap-extras-rpi2-us/debian/*/*/*
+./pocket-piap-extras-rpi2-us/*-stamp
+./pocket-piap-extras-rpi2-us/*~
+./pocket-piap-extras-rpi2-us/pocket-piap-extras-rpi2-us
+./pocket-piap-extras-rpi2-us/pocket-piap-extras-rpi2-us/*
